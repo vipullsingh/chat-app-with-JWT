@@ -244,7 +244,9 @@ input {
 }
 @media (max-width: 850px){
 	.container{
-		height: 900px;
+		width: 80%;
+		margin-top: 20px;
+		height: 600px;
 	}
   .overlay-container{
     display: none;
