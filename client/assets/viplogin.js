@@ -64,69 +64,8 @@ signupForm.addEventListener('submit', async (event) => {
 });
 
 
+// Sign In Logic
 
-
-
-// // Sign In Logic
-
-//         let signInform = document.getElementById("signin-form")
-//         let signedInName = document.getElementById("signedIn_Name")
-//         let signupBtn = document.getElementById("signUpBtn")
-//         let logout = document.getElementById("logOutBtn")
-//         signInform.addEventListener("submit",(e)=>{
-//             e.preventDefault()
-//             let data = {
-//                 email : signInform[0].value,
-//                 password : signInform[1].value
-//             }
-//             fetchLogin(data)
-//             // console.log(form[0].value,form[1].value);
-//         })
-//          function fetchLogin(data){
-//             fetch("https://prickly-dove-knickers.cyclic.app/user/login", {
-//             method: "post",
-//             headers: {
-//                 "Content-Type": "application/json"
-//             },
-//             body: JSON.stringify(data)
-//         })
-//             .then(response => response.json())
-//             .then(result => {
-//                 console.log("success", result)
-//                 if(result.msg==='Login Successful'){
-//                     console.log(result);
-//                     // console.log(data.name);
-//                     localStorage.setItem("LoggedName",result.name)
-//                     localStorage.setItem("LoggedID",result.id)
-//                     // swal("Login Successful!", "You can now access our services!", "success");
-//                     swal({
-//                         title: "Login Successful!",
-//                         text: "You can now access our services!",
-//                         icon: "success",
-//                         button: "Yay!🎉",
-//                       }).then((value) => {
-//                         if (value) {
-//                           window.location.href = "./dashboard.html";
-//                         }
-//                       });
-                      
-//                     // alert("Login Successfull")
-//                     // window.location.href = "./dashboard.html"
-//                 }
-//                 else if(result.msg==='User not found'){
-//                     // alert("User not found")
-//                     swal("Failed! User Not Found ❌", "Go To Sign Up And Create New Account! 🥺🙏", "error");
-//                 }
-//                 else{
-//                     swal("Failed! Wrong Password ❌", "Don't be in hurry! Type your Password Correctly 🙏", "error");
-//                     // alert("Wrong Credentials")
-//                 }
-                
-//             })
-//             .catch(err => console.log(err))
-
-// }
-        
 const signInForm = document.getElementById('signin-form');
 
 signInForm.addEventListener('submit', async (event) => {

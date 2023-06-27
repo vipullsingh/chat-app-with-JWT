@@ -142,7 +142,8 @@ body {
 }
 
 .ch-landing header {
-    padding: 36px 64px;
+    padding-right: 30px;
+    padding-left: 30px;
     display: flex;
     justify-content: space-between;
     position: fixed;
